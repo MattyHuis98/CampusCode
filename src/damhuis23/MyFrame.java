@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package damhuis;
+package damhuis23;
 
 import javax.swing.*;
 
@@ -36,7 +36,7 @@ public class MyFrame extends JFrame{
     }
     
     //Example 108
-    public MyFrame(){
+    /*public MyFrame(){
         super("ICONS");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         label = new JLabel("I have an icon!", new ImageIcon("C:\\Users\\matth\\Pictures\\java-coffee-cup.png"), SwingConstants.CENTER);
@@ -48,13 +48,51 @@ public class MyFrame extends JFrame{
         pane.add(butt);
         add(pane);
         pack();
-    }
+    }*/
     //End of 108
+    
+    //Example 109
+    /*public MyFrame(){
+        super("ToolTip Example");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(150, 150, 250, 100);
+        
+        txf1 = new JTextField(10);
+        txf1.setToolTipText("Enter your name here!");
+        
+        pane = new JPanel();
+        pane.add(txf1);
+        add(pane);
+        pack();
+    }*/
+    //End of 109
+    
+    //Example 110
+    /*public MyFrame(){
+        super("Slider Example");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(150, 150, 250, 100);
+        
+        slide = new JSlider(JSlider.HORIZONTAL, -50, 50, 0);
+        slide.setMajorTickSpacing(20);
+        slide.setMinorTickSpacing(5);
+        slide.setPaintTicks(true);
+        slide.setPaintLabels(true);
+        
+        pane = new JPanel();
+        pane.add(slide);
+        add(pane);
+        pack();
+    }*/
+    //End of 110 
+    
     
     static MyFrame frame;
     JLabel label;
     JButton butt;
     JPanel pane;
+    JTextField txf1;
+    JSlider slide;
     
     public static void main(String[] args) {
         //Example104();
@@ -64,6 +102,5 @@ public class MyFrame extends JFrame{
         frame = new MyFrame();
         frame.setVisible(true);
     }
-    
     
 }
